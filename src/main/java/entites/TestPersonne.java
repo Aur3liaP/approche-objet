@@ -4,7 +4,9 @@ import entites2.Personne;
 
 public class TestPersonne {
     public static void main(String[] args) {
-       // Solution 1
+// TP 1 :
+/*
+       Solution 1
        AdressePostale a = new AdressePostale();
        a.numeroRue = 5;
        a.libelleRue = "des Maréchaux";
@@ -25,5 +27,13 @@ public class TestPersonne {
        aurelia.adresse.libelleRue = "des Maréchaux";
        aurelia.adresse.codePostal = 44100;
        aurelia.adresse.ville = "Nantes";
+*/
+
+// TP 2 :
+       // Avec paramètres :
+
+       AdressePostale adr = new AdressePostale(15,"rue machin", 33000, "Bordeaux");
+       Personne didier = new Personne("Mazier", "Didier", adr);
+       System.out.println(didier.prenom);
     }
 }
