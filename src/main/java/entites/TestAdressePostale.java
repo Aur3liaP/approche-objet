@@ -17,5 +17,8 @@ public class TestAdressePostale {
 
         AdressePostale a = new AdressePostale(2,"des Maréchaux", 44100, "Nantes");
         AdressePostale b = new AdressePostale(5,"des Maréchaux", 44100, "Nantes");
+
+        System.out.println(a.ville);
+        System.out.println(b.ville);
     }
 }
