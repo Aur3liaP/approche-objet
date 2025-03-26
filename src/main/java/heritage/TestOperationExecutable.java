@@ -14,11 +14,15 @@ public class TestOperationExecutable {
         for(Operation ope : operations){
             System.out.println(ope);
 
+            montantGlobal = ope.recalulerSolde(montantGlobal);
+/*
             if (ope.getType().equals("CREDIT")) {
                 montantGlobal += ope.getMontant();
             } else if (ope.getType().equals("DEBIT")) {
                 montantGlobal -= ope.getMontant();
             }
+
+ */
         }
 
         System.out.println("Montant global : " + montantGlobal + "€");

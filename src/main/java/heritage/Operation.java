@@ -17,6 +17,8 @@ public abstract class Operation {
         this.montant = montant;
     }
 
+    public abstract double recalulerSolde(double montant);
+
     public String getDate() {
         return date;
     }

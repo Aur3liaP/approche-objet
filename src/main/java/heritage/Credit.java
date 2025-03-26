@@ -15,4 +15,9 @@ public class Credit extends Operation {
     public String getType(){
         return "CREDIT";
     }
+
+    @Override
+    public double recalulerSolde(double montant){
+        return montant + getMontant();
+    }
 }

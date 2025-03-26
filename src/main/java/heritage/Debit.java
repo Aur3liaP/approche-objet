@@ -16,4 +16,9 @@ public class Debit extends Operation{
         return "DEBIT";
     }
 
+    @Override
+    public double recalulerSolde (double montant){
+        return montant - getMontant();
+    }
+
 }
