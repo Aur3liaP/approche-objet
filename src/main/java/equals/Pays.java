@@ -17,6 +17,14 @@ public class Pays {
         Pays pays = (Pays) o;
         return population == pays.population && Objects.equals(nom, pays.nom);
     }
+    /*
+    public boolean equals(Objet obj){
+        if (obj instanceof Pays autre) {
+            return Objects.equals(this.nom, autre.getNom()) && this.population==autre.getPopulation();
+        } return false;
+    }
+
+     */
 
     @Override
     public int hashCode() {
