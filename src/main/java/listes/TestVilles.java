@@ -33,7 +33,7 @@ public class TestVilles {
         villes.remove(villeLaMoinsPeuplee);
 
         for (Ville ville : villes) {
-            if (ville.getNbHabitants() > 100000) {
+            if (ville.getNbHabitants() > 100_000) {
                 ville.setNom(ville.getNom().toUpperCase());
             }
         }

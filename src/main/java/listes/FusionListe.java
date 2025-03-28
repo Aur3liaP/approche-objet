@@ -18,6 +18,13 @@ public class FusionListe {
         List<String> liste3 = new ArrayList<>(liste1);
         liste3.addAll(liste2);
 
+        /* Avec boucle :
+        List<String> listeFinale = new ArrayList<>();
+        for (String s : liste1) {
+            liste3.add(s)
+            }
+         */
+
         System.out.println("liste 3 : " + liste3);
     }
 }

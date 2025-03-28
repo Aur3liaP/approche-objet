@@ -1,18 +1,12 @@
 package listes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestListeString {
     public static void main(String[] args) {
         ArrayList<String> liste = new ArrayList<>();
-        liste.add("Nice");
-        liste.add("Carcassonne");
-        liste.add("Narbonne");
-        liste.add("Lyon");
-        liste.add("Foix");
-        liste.add("Pau");
-        liste.add("Marseille");
-        liste.add("Tarbes");
+        Collections.addAll(liste, "Nice", "Carcassonne", "Narbonne", "Lyon", "Foix", "Pau", "Marseille", "Tarbes");
 
         String villePlusLettres= "";
 
@@ -29,5 +23,17 @@ public class TestListeString {
 
         liste.removeIf(ville -> ville.startsWith("N"));
         System.out.println("liste sans N : " + liste);
+
+/*
+        Iterator<String> iterator = liste.iterator();
+        while(iterator.hasNext()){
+            String item = iterator.next();
+            if (item.toUppercase().charAt(0) == 'N') {
+                iterator.remove();
+            }
+        }
+ */
+
+
     }
 }

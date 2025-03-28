@@ -23,6 +23,6 @@ public class Ville {
 
     @Override
     public String toString() {
-        return nom + " (" + nbHabitants + " hab.)";
+        return nom + " (" + nbHabitants + " habitants)";
     }
 }
