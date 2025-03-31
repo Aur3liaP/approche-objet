@@ -18,7 +18,8 @@ public class ComptagePaysParContinent {
 
         for (Pays pays : listePays) {
             String continent = pays.getContinent();
-            comptagePaysParContinent.put(continent, comptagePaysParContinent.getOrDefault(continent, 0) + 1);
+            comptagePaysParContinent.put(continent, comptagePaysParContinent.get(continent) + 1);
+            // comptagePaysParContinent.put(continent, comptagePaysParContinent.getOrDefault(continent, 0) + 1);
         }
 
         System.out.println("Comptage des pays par continent :");
