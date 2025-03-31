@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LectureFichier {
@@ -62,6 +63,12 @@ public class LectureFichier {
             System.out.println(outputLine);
         }
 
+        // Ex 3 tri +25000 habitants par ordre décroissant de pop :
+        Collections.sort(villes, new VillePopulationDecroissantComparator());
+
+        for (Ville ville : villes) {
+            System.out.println(ville);
+        }
 
     }
 }
