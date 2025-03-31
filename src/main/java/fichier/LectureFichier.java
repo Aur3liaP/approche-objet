@@ -29,6 +29,7 @@ public class LectureFichier {
             String codeDepartement = tokens[2].trim();
             String nomRegion = tokens[1].trim();
             int populationTotale = Integer.parseInt(tokens[9].trim().replaceAll(" ", ""));
+            //Ville ville = new Ville(tokens[6], tokens[2], tokens[1], Integer.parseInt(tokens[9].trim().replaceAll(" ", "")));
 
             Ville ville = new Ville(nom, codeDepartement, nomRegion, populationTotale);
             villes.add(ville);
